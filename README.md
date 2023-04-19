@@ -23,7 +23,9 @@ You can run it from windows, mac or linux terminal with just calling "***node mo
 ***port*** het you chose what port should the **mockai-vpn.js** application connect and listen.
 
 ## Example of use
-The current setting in **mockai-config.json** gives readOnly access to demo account https://mockatee.com/brand/ipc . 
-the localEndpoint is not running exapmple, as with the demo account there is no allowed connection outside. The real application should set here a real - active endpoint so the local MockAI apllication can work properly. 
+The current setting in **mockai-config.json** gives readOnly access to demo account https://mockatee.com/project/ipc . 
 
-If your project doesn't require access token you can ommit the "**accessToken***". adding there anything different from access token will result in falure, as the MockAI will try to link the access token to proper version.
+Usualy will mockAI try to reach the endpoint "localEndpoint". as long as this port will be unreachable, the Mockai will serve mock data as stated in **ipc** exapmple. 
+
+Access token is ment to secure your application but it can be also used to define with what version of project you wanna work. 
+so if the project doesn't require access token you can ommit the "**accessToken***" field, but that way it will serve only the current version.
